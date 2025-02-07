@@ -17,6 +17,14 @@ void main() {
   stdout.write("Enter Second No: ");
   b = int.parse(stdin.readLineSync().toString());
   print("Multiplication of $a and $b is ${multi(a, b)}");
+
+    // Division
+  print("Enter Values for Division");
+  stdout.write("Enter First No: ");
+  a = int.parse(stdin.readLineSync().toString());
+  stdout.write("Enter second No: ");
+  b = int.parse(stdin.readLineSync().toString());
+  print("Division of $a and $b is ${division(a, b)}");
   
 }
 
@@ -31,3 +39,9 @@ int subTract(int a, int b) {
 int multi(int a, int b) {
   return a * b;
 }
+
+// * Division
+int division(int a, int b) {
+  return a ~/ b;
+}
+
